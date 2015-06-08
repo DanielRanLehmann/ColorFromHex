@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIColor+ColorFromHexadecimal.h
 //  ColorFromHex
 //
 //  Created by Daniel Ran Lehmann on 08/06/15.
@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIColor+ColorFromHexadecimal.h" 
 
-@interface ViewController : UIViewController
+@interface UIColor (ColorFromHexadecimal)
 
++ (UIColor *)colorFromHexString:(NSString *)hexString;
 
 @end
-

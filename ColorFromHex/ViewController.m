@@ -14,9 +14,16 @@
 
 @implementation ViewController
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor colorFromHexString:@"#00aced"]; //the official twitter color
 }
 
 - (void)didReceiveMemoryWarning {
